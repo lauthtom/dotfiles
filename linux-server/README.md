@@ -1,14 +1,16 @@
-# How to Fix no Sound on Ubuntu Server
-* speaker-test -t wav -c 6 ( test the speaker if they work )
-* pavucontrol ( opens a gui to control input and output devices )
+# speakHow to Fix no Sound on Ubuntu Server
+
+## Basic Programms 
+  * speaker-test -t wav -c 6 ( test the speaker if they work )
+  * pavucontrol ( opens a gui to control input and output devices )
 
 
-To set the right output  
+## To set the right output  
   * pact list short sinks ( list all available devices )
   * pacmd set-default-sink 1 ( set the right output
 
 
-Set it to default 
+## Set it to default 
   * cd /etc/pulse/
   * sudo vim default.pa 
   * scroll to the bottom, where two lines started with -set will be commented out. Now uncomment these lines
