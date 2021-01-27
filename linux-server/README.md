@@ -22,6 +22,7 @@
 
 ## change mouse cursor and its size 
   * sudo update-alternatives --config x-cursor-theme ( select the right cursor )
+  * cd /etc/X11/Xresources/ => change the file to the current cursor 
   * sudo apt-get install dmz-cursor-theme
   * dconf write /org/gnome/desktop/interface/cursor-size 16
   * gsettings set org.gnome.desktop.interface cursor-size 16
