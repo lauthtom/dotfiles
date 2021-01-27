@@ -26,7 +26,7 @@
 
 ## To set the right output  
 
-  * pact list short sinks ( list all available devices )
+  * pactl list short sinks ( list all available devices )
   * pacmd set-default-sink 1 ( set the right output
 
 ## Set it to default 
