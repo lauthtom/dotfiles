@@ -3,6 +3,10 @@
   * sudo apt install firefox & ffmpeg && snap && code -classic && thunar && spotify && obs && draw.io
   * set github config  (~/.git-credentials - https://username:password@github.com )
 
+## autologin 
+  * sudo systemctl edit getty@tty1.service
+  * sudo vim /etc/systemd/system/getty@tty1.service.d/override.conf and replace myusername with the real name 
+
 ## edit .bashrc
   * alias killdwm='pkill -Kill -u starlabs'
   * edit PS1 - u@implement
