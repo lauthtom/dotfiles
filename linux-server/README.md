@@ -1,14 +1,36 @@
+# First steps after installing Ubuntu Server
+
+  * sudo apt install firefox & ffmpeg && snap && code -classic && thunar && spotify && obs && draw.io
+  * set github config  (~/.git-credentials - https://username:password@github.com )
+
+## edit .bashrc
+  * alias killdwm='pkill -Kill -u starlabs'
+  * edit PS1 - u@implement
+
+## edit .xinitrc
+  * [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+  * while true; do xsetroot -name "$(date)"; sleep 1; done & 
+  * exec dwm
+
+## edit .Xresources 
+  * Xft.dpi: 96
+  * Xcursor.size: 24
+  * Xcursor.theme: DMZ-Black
+
+
+
 # How to Fix no Sound on Ubuntu Server
+
   * speaker-test -t wav -c 6 ( test the speaker if they work )
   * pavucontrol ( opens a gui to control input and output devices )
 
-
 ## To set the right output  
+
   * pact list short sinks ( list all available devices )
   * pacmd set-default-sink 1 ( set the right output
 
-
 ## Set it to default 
+
   * cd /etc/pulse/
   * sudo vim default.pa 
   * scroll to the bottom, where two lines started with -set will be commented out. Now uncomment these lines
