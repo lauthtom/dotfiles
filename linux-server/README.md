@@ -1,5 +1,5 @@
 # First steps after installing Ubuntu Server
-  * sudo apt install firefox & ffmpeg && snap && code -classic && thunar && spotify && obs && draw.io
+  * sudo apt install firefox & ffmpeg && snap && code -classic && thunar && spotify && obs && draw.io 
   * set github config  (~/.git-credentials - https://username:password@github.com )
 
 ## autologin 
@@ -25,8 +25,6 @@
   * sudo apt-get install dmz-cursor-theme
   * dconf write /org/gnome/desktop/interface/cursor-size 16
   * gsettings set org.gnome.desktop.interface cursor-size 16
-
-
 
 
 # How to Fix no Sound on Ubuntu Server
