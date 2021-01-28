@@ -43,5 +43,5 @@
   * cd /etc/pulse/
   * sudo vim default.pa 
   * scroll to the bottom, where two lines started with -set will be commented out. Now uncomment these lines
-    and replace the words input and output with the number of the right devices ( this will set it now to
+    and replace the words **input** and **output** with the number of the right devices ( this will set it now to
     default )
