@@ -13,6 +13,9 @@
 ## edit .xinitrc
   * [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
   * while true; do xsetroot -name "$(date)"; sleep 1; done & 
+  * dconf write /org/gnome/desktop/interface/cursor-size 16
+  * gsettings set org.gnome.desktop.interface cursor-size 16
+  * xrdb -merge ~/.Xresources
   * exec dwm
 
 ## edit .Xresources 
