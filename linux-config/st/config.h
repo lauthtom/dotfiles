@@ -5,6 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
+
+// another good two fonts 
+// static char *font = "Fixed:pixelsize=19:antialias=true:autohint=true"; 
+// To use the font above, you'll need to enable bitmapped fonts on your os (for example, Ubuntu) 
+// static char *font = "notomono:pixelsize=16:antialias=true:autohint=true";
+
 static char *font = "mono:pixelsize=18:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
