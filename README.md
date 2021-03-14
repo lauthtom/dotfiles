@@ -1,4 +1,4 @@
-# First steps after installing Ubuntu Server
+# First steps after installing Ubuntu and setting dwm up
   * install a terminal emulator like xterm ( enable bitmap font on ubuntu --> Fixed Font )
   * sudo apt install firefox & ffmpeg && snap && code -classic && thunar && spotify && obs && draw.io 
   * set github config  (~/.git-credentials - https://username:password@github.com )
