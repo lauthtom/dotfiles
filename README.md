@@ -1,4 +1,5 @@
 # First steps after installing Ubuntu Server
+  * install a terminal emulator like xterm ( enable bitmap font on ubuntu --> Fixed Font )
   * sudo apt install firefox & ffmpeg && snap && code -classic && thunar && spotify && obs && draw.io 
   * set github config  (~/.git-credentials - https://username:password@github.com )
 
@@ -6,9 +7,6 @@
   * sudo systemctl edit getty@tty1.service
   * sudo vim /etc/systemd/system/getty@tty1.service.d/override.conf and replace myusername with the real name 
 
-## edit .bashrc
-  * alias killdwm='pkill -Kill -u starlabs'
-  * edit PS1 - u@implement
 
 ## edit .xinitrc
   * [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
@@ -17,11 +15,6 @@
   * gsettings set org.gnome.desktop.interface cursor-size 16
   * xrdb -merge ~/.Xresources
   * exec dwm
-
-## edit .Xresources 
-  * Xft.dpi: 96
-  * Xcursor.size: 24
-  * Xcursor.theme: DMZ-Black
 
 ## change mouse cursor and its size 
   * sudo update-alternatives --config x-cursor-theme ( select the right cursor )
