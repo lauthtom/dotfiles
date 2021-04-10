@@ -1,5 +1,20 @@
 # Installing and Configuring i3-gaps on Ubuntu 
 
+## First thing, you have to do is:
+```
+sudo apt update
+sudo apt upgrade
+```
+
+## Enable bitmap fonts
+```
+sudo rm /etc/fonts/conf.d/70-no-bitmaps.conf
+sudo ln -s ../conf.avail/70-force-bitmaps.conf /etc/fonts/conf.d/
+sudo dpkg-reconfigure fontconfig-config
+sudo dpkg-reconfigure fontconfig
+sudo fc-list | grep Fixed | grep 6x13.pcf
+```
+
 ## Installing some dependencies
 ```
 sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev 
@@ -16,3 +31,9 @@ sudo apt install i3-gaps
 ```
 
 now restart the computer, and select in the login menu, the i3 session
+
+## Installing some more packages, you'll need
+```
+sudo apt install gcc git vim make xterm
+```
+
