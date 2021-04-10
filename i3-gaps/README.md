@@ -1,6 +1,6 @@
 # Installing and Configuring i3-gaps on Ubuntu 
 
-## First thing, you have to do is:
+## First things, you have to do is
 ```
 sudo apt update
 sudo apt upgrade
@@ -34,6 +34,6 @@ now restart the computer, and select in the login menu, the i3 session
 
 ## Installing some more packages, you'll need
 ```
-sudo apt install gcc git vim make xterm
+sudo apt install gcc git vim make xterm feh
 ```
 
