@@ -15,4 +15,4 @@ sudo apt-get update
 sudo apt install i3-gaps
 ```
 
-
+now restart the computer, and select in the login menu, the i3 session
