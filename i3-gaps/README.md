@@ -37,3 +37,16 @@ now restart the computer, and select in the login menu, the i3 session
 sudo apt install gcc git vim make xterm feh
 ```
 
+## Setting up the right output
+```
+echo pacmd set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo >> sound.sh 
+```
+after this, do 
+```
+chmod +x sound.sh
+```
+
+now add in your .bashrc
+```
+sh /path/to/file/sound.sh
+```
