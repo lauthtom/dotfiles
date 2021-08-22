@@ -14,18 +14,18 @@ for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
 # gaps config
-gaps inner 15
-gaps outer 15
+gaps inner 5
+gaps outer 5
 
 # setting a wallpaper
-# exec_always --no-startup-id feh --bg-scale /home/clep/Pictures/Wallpaper/sunrise.jpg
+exec_always --no-startup-id feh --bg-scale /home/clep/Pictures/Wallpaper/black.jpg
 
 # setting the mod (alt) key
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: monospace 10
+font pango: monospace 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -45,6 +45,9 @@ exec --no-startup-id nm-applet
 # Blueman is Bluetooth Manager for i3 window manager
 exec --no-startup-id blueman-applet
 
+
+
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -56,7 +59,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Return exec --no-startup-id st 
 
 # kill focused window
 bindsym $mod+q kill
@@ -103,7 +106,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -115,6 +118,10 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# poweroff the os
+bindsym $mod+o exec systemctl poweroff
+
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -131,6 +138,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -203,10 +211,10 @@ bar {
 	background #000000
 	statusline #ffffff
 	separator #666666
-	focused_workspace  #000000 #000000 #ffffff
-	active_workspace   #000000 #000000 #ffffff
-	inactive_workspace #000000 #222222 #ffffff
-	urgent_workspace   #2f343a #900000 #ffffff
+	#focused_workspace  #993333 #993333 #ffffff
+	#active_workspace   #000000 #000000 #ffffff
+	#inactive_workspace #000000 #222222 #ffffff
+	#urgent_workspace   #2f343a #900000 #ffffff
 	} 
 
 }
@@ -214,5 +222,7 @@ bar {
 # my application bindings
 bindsym $mod+x exec --no-startup-id firefox
 bindsym $mod+c exec --no-startup-id pavucontrol
+bindsym $mod+s exec --no-startup-id spotify 
+bindsym $mod+d exec st  ranger
 
 
