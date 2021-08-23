@@ -220,9 +220,15 @@ bar {
 }
 
 # my application bindings
-bindsym $mod+x exec --no-startup-id firefox
+bindsym $mod+x exec --no-startup-id /opt/google/chrome/google-chrome
 bindsym $mod+c exec --no-startup-id pavucontrol
 bindsym $mod+s exec --no-startup-id spotify 
 bindsym $mod+d exec st  ranger
+
+
+#Pulse Audio controls
+bindsym $mod+Shift+i exec --no-startup-id pactl set-sink-volume 3 +5% #increase sound volume
+bindsym $mod+Shift+d exec --no-startup-id pactl set-sink-volume 3 -5% #decrease sound volume
+bindsym $mod+Shift+m exec --no-startup-id pactl set-sink-mute 3 toggle # mute sound
 
 
