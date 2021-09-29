@@ -1,6 +1,5 @@
 # First steps after installing Ubuntu and setting dwm up
   * install a terminal emulator like xterm ( enable bitmap font on ubuntu --> Fixed Font )
-  * sudo apt install firefox & ffmpeg && snap && code -classic && thunar && spotify && obs && draw.io 
   * set github config  (~/.git-credentials - https://username:password@github.com )
 
 ## autologin 
@@ -13,6 +12,7 @@
   * while true; do xsetroot -name "$(date)"; sleep 1; done & 
   * dconf write /org/gnome/desktop/interface/cursor-size 16
   * gsettings set org.gnome.desktop.interface cursor-size 16
+  * xmodmap ~/.Xmodmap
   * xrdb -merge ~/.Xresources
   * exec dwm
 
@@ -23,8 +23,13 @@
   * dconf write /org/gnome/desktop/interface/cursor-size 16
   * gsettings set org.gnome.desktop.interface cursor-size 16
 
+## change the font in xterm
+  * go to [a link](https://fonts.google.com/noto/specimen/Noto+Sans+Mono?noto.region=Americas&noto.query=United                   +States) 
+  * Download the Regular 400 style
+  * Install it with the font-manager
 
-# How to Fix no Sound on Ubuntu Server
+
+# How to Fix no Sound on Ubuntu 
   * speaker-test -t wav -c 6 ( test the speaker if they work )
   * pavucontrol ( opens a gui to control input and output devices )
 
