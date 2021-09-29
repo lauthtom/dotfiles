@@ -1,16 +1,17 @@
 Xft.dpi: 96
-Xcursor.size: 24
+Xcursor.size: 16
 Xcursor.theme: DMZ-Black
 
 
-! xterm settings
-xterm*faceName: Fixed
-xterm*faceSize: 16
+! comment
+xterm*vt100.faceName: notosansmono:style=condensed:size=14:antialias=true
 XTerm*termName: xterm-256color
 XTerm*selectToClipboard: true
+xterm*allowBoldFonts: false
+xterm*saveLines: 1000
 
-xterm*foreground: rgb:a8/a8/a8
-xterm*background: rgb:00/00/00
+xterm*foreground: grey
+xterm*background: black 
 xterm*color0: rgb:00/00/00
 xterm*color1: rgb:a8/00/00
 xterm*color2: rgb:00/a8/00
