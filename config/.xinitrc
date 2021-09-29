@@ -11,5 +11,7 @@ nitrogen --restore &
 while true; do xsetroot -name "$(date)"; sleep 1; done &
 dconf write /org/gnome/desktop/interface/cursor-size 16
 gsettings set org.gnome.desktop.interface cursor-size 16
+xmodmap ~/.Xmodmap
 xrdb -merge ~/.Xresources
 exec dwm
+
