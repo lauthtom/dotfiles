@@ -24,7 +24,7 @@
   * gsettings set org.gnome.desktop.interface cursor-size 16
 
 ## change the font in xterm
-  * go to [a link](https://fonts.google.com/noto/specimen/Noto+Sans+Mono?noto.region=Americas&noto.query=United+States) 
+  * go to [this link](https://fonts.google.com/noto/specimen/Noto+Sans+Mono?noto.region=Americas&noto.query=United+States) 
   * Download the Regular 400 style
   * Install it with the font-manager
 
