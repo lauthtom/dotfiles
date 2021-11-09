@@ -34,7 +34,7 @@ now restart the computer, and select in the login menu, the i3 session
 
 ## Installing some more packages, you'll need
 ```
-sudo apt install gcc git vim make xterm feh
+sudo apt install gcc git vim make xterm feh fonts-font-awesome
 ```
 
 ## Setting up the right output
