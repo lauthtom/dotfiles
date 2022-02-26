@@ -16,6 +16,13 @@
   * xrdb -merge ~/.Xresources
   * exec dwm
 
+<TODO: current firefox settings for good performance>
+## set Firefox settings 
+  * Use recommended performance settings [off]
+  * Use hardware acceleration when available [off]
+  * layers.acceleration.disabled [true]
+  * layers.acceleration.force-enabled [false]
+
 ## change mouse cursor and its size 
   * sudo update-alternatives --config x-cursor-theme ( select the right cursor )
   * cd /etc/X11/Xresources/ => change the file to the current cursor 
