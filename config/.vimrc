@@ -1,7 +1,7 @@
 filetype plugin indent on
 syntax on
-set tabstop=2
-set shiftwidth=2
+set tabstop=4 softtabstop=4
+set shiftwidth=4
 set expandtab
 set autoindent 
 set number
@@ -24,3 +24,9 @@ set ttymouse=sgr
 
 "disable bold fonts in vim
 set t_md=
+
+"map some useful commands
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
