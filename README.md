@@ -2,7 +2,7 @@
 Feel free to use my dotfiles and play with them :)
 
 ### Installing DWM
-Install your Dependencies for your System, just google them. Then clone the 
-following repos in your ~/.config/suckless folder <br />
-`git clone https://git.suckless.org/dwm` and <br /> 
-`git clone https://git.suckless.org/dmenu` <br />
+Install your Dependencies for your System (just google them). Then clone the 
+following repos in your **~/.config/suckless** folder
+`git clone https://git.suckless.org/dwm` and 
+`git clone https://git.suckless.org/dmenu` 
