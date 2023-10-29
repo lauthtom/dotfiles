@@ -112,8 +112,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# automatically startx
-#if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
-# . startx
-# logout
-#fi

@@ -8,7 +8,6 @@ set number
 set hlsearch
 set incsearch
 set ruler
-colorscheme togglebit
 
 set title
 
@@ -30,9 +29,5 @@ set t_md=
 :command Wq wq
 :command W w
 :command Q q
-
-" safe file --> clear terminal --> change directory --> compile java file -->
-" run compiled java file
-map <F5> :w <CR> :!clear <CR> :cd %:p:h <CR> :! javac %:t<CR> :! java %:t:r<CR>
 
 
