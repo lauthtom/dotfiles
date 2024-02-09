@@ -63,6 +63,11 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# Some Color settings for command line
+# export EDITOR='vim'
+# export CLICOLOR=1
+# export LSCOLORS=gx
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
